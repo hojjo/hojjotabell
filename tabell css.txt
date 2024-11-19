@@ -1,0 +1,999 @@
+/*---------Loan post add more field css start----------*/
+.stockcard--more button {
+    border-radius: 30px;
+    background-color: transparent;
+    color: black;
+}
+
+.addmore_table_title .h3-stil {
+    background-color: #2e85402b;
+    border: 0!important;
+    color: #4f4f4f;
+    text-align: left;
+    padding: 17px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stockcard--more button::after {
+    content: url('images/angle-down-1.svg');
+    margin-left: 7px;
+    transition: all .3s ease-in-out;
+}
+
+span.stockcard--more.active button::after {
+    content: url('images/angle_up.PNG');
+    margin-left: 7px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    top: 3px;
+}
+
+.stock-triangle p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 8px;
+}
+
+.tooltip img {
+    width: 25px;
+}
+
+.tooltip .tooltiptext {
+    opacity: 0;
+    position: absolute;
+    padding: 16px;
+    background-color: #f27c56;
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    border-radius: 4px;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    font-weight: 400;
+    z-index: 100;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 200px;
+    font-size: 13px;
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip .tooltiptext:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: rotate(245deg);
+    bottom: -6px;
+    left: calc(50% - 6px);
+    background-color: transparent;
+    border-color: #f27c56 transparent transparent #f27c56;
+    border-style: solid;
+    border-width: 12px;
+}
+
+.single-loan div#content {
+    display: inherit;
+    width: 100%;
+    max-width: 100%;
+}
+
+.addmoreleft_table {
+    width: 50%;
+    float: left;
+}
+
+.addmoreright_table {
+    width: 50%;
+    float: right;
+}
+
+.row_addmoretable {
+    float: left;
+    width: 100%;
+}
+
+.addmore_table_list {
+    float: left;
+    width: 100%;
+}
+
+.addmore_table_list h3 {
+    color: #4f4f4f;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.addmore_table_list ul li {
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+.addmore_table_list ul li p {
+    margin: 0;
+}
+
+.addmore_table_list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.addmore_table_list ul li h3 {
+    margin: 0;
+}
+
+span.tooltiptext br {
+    display: none;
+}
+
+.addmoreleft_table .addmore_table_list {
+    border-right: 1px solid #e8e8e8;
+}
+
+.addmore_table_list ul li .svar {
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    right: 17px;
+    line-height: 17px;
+    display: block;
+}
+
+.loadtooltip h3 p {
+    display: none;
+}
+
+.tooltip i {
+    color: #56ccf2;
+    font-weight: normal;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border: 1px solid #56ccf2;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 19px;
+    font-size: 13px;
+}
+
+.tooltip i:hover {
+    background: #56ccf2;
+    color: #fff;
+}
+
+.addmore_table_list ul li:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.addmore_table_list ul li h4 .fa.fa-check {
+    color: #27ae60;
+    font-size: 17px;
+}
+
+.addmore_table_list ul li .svar .fa.fa-star {
+    background: #ff8622;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.stock-details:hover .stockcard--button {
+    transform: scale(1.08);
+}
+
+.stock-card-info-item {
+    align-self: flex-start;
+}
+
+.stock-card-info-item:first-child {
+    width: 44%;
+}
+
+.loan-card--info-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.loan-card--info-value {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.stock-card-info-item:nth-child(2),
+.stock-card-info-item:nth-child(3) {
+    width: 28%;
+}
+
+.stock-card-info-item.mobile {
+    display: none;
+}
+
+.stock-main {
+    display: grid;
+    grid-template-columns: 15fr 30fr 45fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 35px;
+}
+
+.stockcard--button p {
+    margin: 0;
+}
+
+.stock-main li {
+    list-style: none;
+}
+
+.stock-details {
+    box-shadow: 0 2px 20px rgba(0,0,0,.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.stock-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 1 auto;
+    padding-top: 20px;
+}
+
+.stock-ulcontent ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.stock-icon {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.stock-icon-wrapper {
+    position: relative;
+}
+
+.stock-icon-tooltip::after {
+    position: absolute;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background: inherit;
+    bottom: -6px;
+    left: calc(30% - 6px);
+}
+
+.stock-icon-tooltip {
+    position: relative;
+    padding: 8px 12.5px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+.stock-icon img {
+    display: flex;
+    position: relative;
+    max-width: 156px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 50px;
+    transition: all .2s ease;
+    margin: 0 auto 24px;
+}
+
+.stock-icon img:hover {
+    transform: scale(1.15);
+}
+
+.stock-ulcontent .bullets-icon {
+    width: 1em;
+    height: 1em;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.stock-footer {
+    background-color: #fbfbfb;
+    display: flex;
+    padding: 12px 35px;
+    justify-content: space-between;
+    align-items: center;
+	min-height: 50px; /* Lägg till denna */
+}
+
+.stock-triangle {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+	gap: 10px; /* Lägg till denna */
+    min-height: 25px; /* Lägg till denna */
+}
+
+.stock-triangle svg {
+    margin-right: 10px;
+}
+
+.stockcard--more {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 175px;
+    justify-content: center;
+}
+
+.loan-card:hover .stockcard--button {
+    transform: scale(1.08);
+}
+
+.stockcard--button {
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #2a7a3a;
+    border-radius: 30px;
+    border: 0;
+    display: inline-block;
+}
+
+.stock-details .stockcard--button a {
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 8px 45px;
+    display: block;
+}
+
+.add-more-header {
+    background-color: rgba(86,204,242,.2);
+    border: 0 !important;
+    color: #56ccf2;
+    text-align: left;
+    padding: 17px;
+}
+
+.add-more-content {
+    float: left;
+    width: 100%;
+}
+
+.add-more-left {
+    float: left;
+    width: 50%;
+}
+
+.add-more-right {
+    width: 50%;
+    float: left;
+}
+
+.add-more-text {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px 17px;
+}
+
+.add-left-title {
+    float: left;
+    width: 40%;
+}
+
+.add-right-description {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+
+.add-more-header h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #56ccf2;
+    text-align: left;
+    margin: 0;
+}
+
+.add-left-title h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4f4f4f;
+    margin: 0;
+}
+
+.add-right-description h4 {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: #4f4f4f;
+    margin: 0;
+}
+
+.more-table-content {
+    border-right: 1px solid #eee;
+    float: left;
+    width: 100%;
+}
+
+.stock-ulcontent i {
+    color: #2a7a3a;
+    font-size: 17px;
+}
+
+.stock-card-info-item .topp-info {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.stock-card-info-item .bottom-info {
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+.rating-stars br {
+    display: none;
+}
+
+.rating-stars span {
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.rating-stars p {
+    margin: 0;
+    line-height: 0;
+}
+
+.rating-stars i {
+    color: #f2994a;
+    font-size: 30px;
+    width: 30px;
+}
+
+.rating-stars {
+    padding-left: 15px;
+    position: relative;
+    bottom: 5px;
+}
+
+#text {
+    display: none;
+}
+
+.bottomdiv_section {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.bottomleft_div {
+    width: 50%;
+    float: left;
+}
+
+.bottomright_div {
+    width: 50%;
+    float: right;
+}
+
+.bottomleft_divtext {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 25px;
+}
+
+.bottomright_divtext {
+    padding-left: 17px;
+    padding-right: 25px;
+}
+
+.bottomdiv_section a {
+    color: #ff9c45;
+    letter-spacing: -.01em;
+}
+
+.bottomleft_divtext svg {
+    position: absolute;
+    left: -10px;
+    height: 70px;
+    width: 70px;
+}
+
+.bottomdiv_section h5,
+.bottomfulltext h5 {
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+}
+
+.bottomdiv_section h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.bottomleft_divtext p {
+    margin: 0;
+    padding-left: 40px;
+}
+
+.bottombtn {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Ny button style istället för a-tag */
+.bottombtn button.banner_btn {
+    text-decoration: none;
+    background-color: transparent;
+    color: #2a7a3a;
+    border: 1px solid #2a7a3a;
+    border-radius: 44px;
+    padding: 17px 31px;
+    line-height: 1;
+    cursor: pointer;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+
+.bottomdiv_section h5 br {
+    display: none;
+}
+
+.bottomfulltext {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.addmore_table_list ul li:last-child {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.stock-ulcontent li i {
+    margin-right: 2px;
+}
+
+.addmore_table_list ul li .fa.fa-close {
+    font-size: 17px;
+    color: #cf2e2e;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 767px) {
+    .bottomleft_divtext p {
+        margin: 0;
+        padding-left: 70px;
+    }
+    
+    .stock-main {
+        display: flex;
+        grid-template-columns: 15fr 30fr 45fr;
+        grid-gap: 20px;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 30px 35px;
+        justify-content: start;
+        flex-direction: column;
+    }
+    
+    .loan-list-section--title img {
+        height: 44px;
+        width: 110px;
+    }
+    
+    .stock-card-info-item.mobile {
+        display: flex;
+    }
+    
+    .stock-information {
+        order: 2;
+        flex-wrap: wrap;
+        width: 100%;
+        border-top: 2px solid #e5e5e5;
+        border-bottom: 2px solid #e5e5e5;
+        padding: 20px 0;
+    }
+    
+    .stock-card-info-item {
+        position: relative;
+        width: 50% !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .stock-card-info-item .topp-info {
+        font-size: 10px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .stock-card-info-item .bottom-info {
+        font-size: 14px;
+        margin-bottom: 0px !important;
+    }
+    
+    .stock-card-info-item:first-child,
+    .stock-card-info-item :nth-child(2) {
+        margin-bottom: 30px;
+    }
+    
+    .stock-card-info-item:first-child::after,
+    .stock-card-info-item:nth-child(2)::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: #e5e5e5;
+        position: absolute;
+        top: calc(100% + 15px);
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .stock-footer {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 12px 35px 25px;
+    }
+    
+    .stockcard--more {
+        display: inherit;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        order: 3;
+    }
+    
+    .stockcard--button {
+        font-size: 16px;
+        padding: 8px 1px;
+        margin: 15px auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .stock-triangle svg {
+        width: 15px;
+    }
+    
+    .stock-triangle {
+        font-size: 12px;
+    }
+    
+    .stock-triangle p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .addmoreleft_table {
+        width: 100%;
+    }
+    
+    .addmoreright_table {
+        width: 100%;
+    }
+    
+    .addmore_table_list strong {
+        font-size: 12px;
+    }
+    
+    .addmore_table_list ul li .svar {
+        font-size: 12px;
+        right: 6px;
+    }
+    
+    .stock-icon {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .stock-ulcontent {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .rating-stars .wp-block-jetpack-rating-star.is-style-outlined {
+        text-align: center !important;
+    }
+    
+    .addmore_table_list ul li .svar {
+        width: 55%;
+    }
+    
+    .addmore_table_list strong {
+        width: 40%;
+    }
+    
+    .loadtooltip {
+        float: left;
+        width: 100%;
+    }
+    
+    .bottomleft_div {
+        width: 100%;
+        float: left;
+    }
+    
+    .bottomright_div {
+        width: 100%;
+        float: right;
+    }
+    
+    .bottomleft_divtext {
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+    
+    .stockcard--button {
+        order: 1;
+    }
+    
+    .bottomfulltext {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .stock-ulcontent li span {
+        font-size: 15px;
+    }
+    
+    .bottombtn button.banner_btn {
+        padding: 17px 26px !important;
+    }
+    
+    .tooltip .tooltiptext {
+        left: 100%;
+    }
+    
+    .bottomdiv_section h3 {
+        font-size: 13px;
+        color: #333;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        padding-left: 26px;
+        position: relative;
+        top: 6px;
+    }
+    
+    .bottomleft_divtext h5 {
+        margin-top: 10px;
+    }
+    
+    .bottomright_divtext {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .stock-main {
+        display: flex;
+        align-items: flex-end;
+        padding: 30px 35px;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    
+    .stock-icon {
+        flex: 0 0 auto;
+        margin-right: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .rating-stars .wp-block-jetpack-rating-star.is-style-outlined {
+        text-align: center !important;
+    }
+    
+    .stock-ulcontent {
+        list-style: none;
+        padding: 0;
+        flex: 0 0 auto;
+        margin: 0 32px 0 0;
+    }
+    
+    .stock-triangle p svg {
+        width: 25px;
+    }
+    
+    .stock-triangle p {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+    
+    .stockcard--button {
+        font-size: 17px;
+    }
+    
+    .addmoreleft_table {
+        width: 100%;
+        float: left;
+    }
+    
+    .addmoreright_table {
+        width: 100%;
+        float: right;
+    }
+    
+    .stock-information {
+        float: left;
+        width: 100%;
+    }
+    
+    .bottomdiv_section h3 {
+        font-size: 15px;
+    }
+    
+    .main-stock-content {
+        padding: 0 20px;
+    }
+    
+    .rating-stars .wp-block-jetpack-rating-star.is-style-outlined {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .rating-stars {
+        padding-left: 0;
+    }
+    
+    .addmore_table_list ul li h4 {
+        right: 8px;
+    }
+    
+    .addmore_table_list ul li h3 {
+        width: 40%;
+    }
+    
+    .addmore_table_list ul li h4 {
+        width: 58%;
+    }
+    
+    .loadtooltip {
+        width: 100%;
+        float: left;
+    }
+    
+    .main-stock-content {
+        padding: 0 20px;
+    }
+    
+    .addmore_table_list ul li h3 {
+        font-size: 15px;
+    }
+    
+    .rating-stars .wp-block-jetpack-rating-star.is-style-outlined {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1299px) {
+    .main-stock-content {
+        padding: 0 20px;
+    }
+    
+    .addmore_table_list ul li h3 {
+        width: 46%;
+    }
+    
+    .addmore_table_list ul li h4 {
+        width: 55%;
+    }
+    
+    .loadtooltip {
+        float: left;
+        width: 100%;
+    }
+    
+    .rating-stars {
+        padding-left: 0;
+    }
+    
+    .rating-stars .wp-block-jetpack-rating-star.is-style-outlined {
+        margin: 0;
+    }
+}
+
+.lining.fsrs-text.fsrs-text__visible,
+.hide.fsrs-text.fsrs-text__hidden {
+    display: none;
+}
+
+.rating-stars .fa-star::before {
+    content: "\f005";
+    font-family: "fontawesome";
+    font-style: normal;
+    margin: 0px 2px;
+}
+
+.rating-stars .fsrs-far.fa-fw.fa-star::before {
+    content: "\f006";
+    font-family: fontAwesome;
+}
+
+.rating-stars .fsrs-fas.fa-fw.fa-star-half-stroke::before {
+    content: "\f123";
+    font-family: "fontawesome";
+    font-style: normal;
+}
+
+#loan_loadmorebtn {
+    margin-top: 0;
+    margin-bottom: 50px;
+    float: inherit;
+}
+
+/*---------Loan post add more field css end----------*/
